@@ -17,7 +17,6 @@ import lombok.*;
 public class Profile {
     @Id
     private ObjectId profile_id;
-    @Id
     private ObjectId house_id; // foreign key to the household
     private String user_identity;
     private String name;

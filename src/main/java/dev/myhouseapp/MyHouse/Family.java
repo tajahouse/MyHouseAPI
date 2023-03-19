@@ -17,7 +17,6 @@ import java.util.List;
 public class Family {
     @Id
     private ObjectId house_id;
-    @Id
     private String imdbId;
     private String hoh1;
     private String hoh2;

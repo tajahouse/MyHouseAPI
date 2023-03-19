@@ -15,7 +15,6 @@ import lombok.NoArgsConstructor;
 public class Diary {
     @Id
     private ObjectId diary_id;
-    @Id
     private ObjectId user_id;
     private String title;
     private String content;
