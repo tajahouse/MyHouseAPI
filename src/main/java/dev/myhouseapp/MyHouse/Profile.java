@@ -1,8 +1,10 @@
 package dev.myhouseapp.MyHouse;
 
 import java.util.Date;
+import java.util.List;
 
 import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.*;
@@ -13,6 +15,7 @@ import lombok.*;
 @NoArgsConstructor
 
 public class Profile {
+    @Id
     private ObjectId profile_id;
     private ObjectId house_id; // foreign key to the household
     private String user_identity;
@@ -23,4 +26,7 @@ public class Profile {
     private String calendar;
     private String profile_pic_url;
     private int rewards_points;
+    private List<Rewards> rewards_cart;
+    private List<Chores> chores_list;
+    private Diary diary;
 }

@@ -1,25 +1,20 @@
 package dev.myhouseapp.MyHouse;
 
-import java.sql.Date;
-
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.*;
 
-@Document(collection = "posts")
+@Document(collection = "rewards")
 @Data // for getters and setters
 @AllArgsConstructor // for constructors
 @NoArgsConstructor
-
-public class Post {
+public class Rewards {
     @Id
-    private ObjectId id;
-    @DBRef
-    private Family family;
-    private String title;
-    private String content;
-    private Date dateCreated;
+    private ObjectId reward_id;
+    private String reward_name;
+    private String reward_description;
+    private int cost;
+    private boolean approved;
 }

@@ -1,0 +1,13 @@
+{
+    "_id": {"$oid":"616e4e12fa572c512b9f857d" },
+    "imdbId": "tt1234567",
+    "hoh1": "John",
+    "hoh2": "Jane",
+    "email_hoh1": "john@example.com",
+    "email_hoh2": "jane@example.com",
+    "family_name": "Doe",
+    "google_calendar": "https://calendar.google.com/calendar/embed?src=example%40gmail.com&ctz=America%2FNew_York",
+    "creation_date": {"$date": "2023-01-01T00:00:00Z"},
+    "posts": [],
+    "profiles": []
+}
