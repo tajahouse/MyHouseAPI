@@ -27,6 +27,7 @@ public class Family {
     private String google_calendar;
     private Date creation_date;
     private List<Post> posts;
+    private List<Profile> profiles;
 //todo: Clean up
     // public ObjectId getHouse_id(){
     //     return house_id;
