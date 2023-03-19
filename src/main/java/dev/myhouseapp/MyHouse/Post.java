@@ -17,15 +17,9 @@ import lombok.*;
 public class Post {
     @Id
     private ObjectId id;
-
     @DBRef
     private Family family;
-
     private String title;
-
     private String content;
-
     private Date dateCreated;
-
-
 }

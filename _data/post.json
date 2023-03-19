@@ -1,0 +1,10 @@
+{
+    "_id": {"$oid":"616e58bcfa572c512b9f8585"},
+    "family": {
+        "$ref": "family",
+        "$id": {"$oid":"616e4e12fa572c512b9f857d"}
+    },
+    "title": "Welcome to our family blog!",
+    "content": "We're excited to start sharing updates about our family and what we're up to.",
+    "dateCreated": {"$date":"2022-01-01T00:00:00Z"}
+}

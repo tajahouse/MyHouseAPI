@@ -1,0 +1,7 @@
+{
+    "_id": {"$oid":"616e5af0fa572c512b9f8587"},
+    "reward_name": "Movie Night",
+    "reward_description": "Get to choose the movie for our next family movie night",
+    "cost": 50,
+    "approved": true
+}

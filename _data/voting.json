@@ -1,0 +1,12 @@
+{
+    "_id": { "$oid": "6155c5f5d2d0cd788855e84f" },
+    "house_id": { "$oid": "6155c5f5d2d0cd788855e84e" },
+    "title": "Where should we go for vacation?",
+    "description": "We're planning our family vacation and can't decide where to go. Help us choose!",
+    "start_date": { "$date": "2023-06-01T00:00:00.000Z" },
+    "end_date": { "$date": "2023-06-15T00:00:00.000Z" },
+    "options": ["Beach", "Mountains", "City"],
+    "participants": ["JohnDoe", "JaneDoe", "BobSmith"],
+    "creator": "JohnDoe"
+  }
+  

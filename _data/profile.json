@@ -1,0 +1,10 @@
+{
+    "_id": {"$oid":"616e50cbfa572c512b9f857f" },
+    "user_id": {"$oid":"616e50cbfa572c512b9f857e" },
+    "username": "johndoe",
+    "password": "password123",
+    "email": "john@example.com",
+    "roles": ["hoh1", "hoh2", "mom", "dad", "daughter", "son", "sister", "bother", "aunt", "uncle", "neice", "grandmother", "grandfather"],
+    "points": 100,
+    "date_created": {"$date": "2023-02-01T00:00:00Z"}
+}

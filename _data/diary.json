@@ -1,0 +1,9 @@
+{
+    "_id": {"$oid":"616e5665fa572c512b9f8583"},
+    "user_id": {"$oid":"616e50cbfa572c512b9f857e" },
+    "title": "My Day",
+    "content": "Today I woke up early and went for a run. Then I had breakfast and started working on my project. I had a productive day!",
+    "privacy_settings": true,
+    "tags": ["fitness", "productivity"],
+    "mood": "HAPPY"
+}
