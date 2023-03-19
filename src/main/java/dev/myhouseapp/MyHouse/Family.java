@@ -7,6 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Document(collection = "families")
 @Data // for getters and setters
@@ -25,6 +26,7 @@ public class Family {
     private String family_name;
     private String google_calendar;
     private Date creation_date;
+    private List<Post> posts;
 //todo: Clean up
     // public ObjectId getHouse_id(){
     //     return house_id;
