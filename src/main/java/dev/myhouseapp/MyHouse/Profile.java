@@ -28,5 +28,6 @@ public class Profile {
     private String profile_pic_url;
     private int rewards_points;
     private List<Rewards> rewards_cart;
+    private List<Chores> chores_list;
     private Diary diary;
 }
