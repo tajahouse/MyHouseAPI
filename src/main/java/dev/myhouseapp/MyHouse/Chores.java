@@ -28,7 +28,7 @@ public class Chores {
     private Boolean status;
     private int points;
     private String category;
-    private String priority;
+    private Priority priority;
 
     public enum Priority {
         LOW,

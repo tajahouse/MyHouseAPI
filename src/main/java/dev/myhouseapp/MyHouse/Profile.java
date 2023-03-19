@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.*;
@@ -14,7 +15,9 @@ import lombok.*;
 @NoArgsConstructor
 
 public class Profile {
+    @Id
     private ObjectId profile_id;
+    @Id
     private ObjectId house_id; // foreign key to the household
     private String user_identity;
     private String name;
@@ -25,4 +28,5 @@ public class Profile {
     private String profile_pic_url;
     private int rewards_points;
     private List<Rewards> rewards_cart;
+    private Diary diary;
 }
