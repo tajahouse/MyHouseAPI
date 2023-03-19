@@ -1,6 +1,7 @@
 package dev.myhouseapp.MyHouse;
 
 import java.util.Date;
+import java.util.List;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -23,4 +24,5 @@ public class Profile {
     private String calendar;
     private String profile_pic_url;
     private int rewards_points;
+    private List<Rewards> rewards_cart;
 }
