@@ -1,14 +1,35 @@
 package dev.myhouseapp.MyHouse;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
+import java.util.Optional;
+
+import org.bson.types.ObjectId;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/families")
 public class FamilyController {
+    
+    @Autowired
+    private FamilyService familyService;
+
     @GetMapping
-    public String allFamilies(){
-        return "Families List";
+    public ResponseEntity<List<Family>> getAllFamilies(){
+        //todo: Write edge cases
+        return new ResponseEntity<List<Family>>(familyService.allFamilies(), HttpStatus.OK);
+    }
+
+    @GetMapping("/{imdbId}")
+    public ResponseEntity<Optional<Family>> getSingleFamily(@PathVariable String imdbId){
+        return new ResponseEntity<Optional<Family>>(familyService.singleFamily(imdbId), HttpStatus.OK);
+    }
+
+    @PostMapping
+    public ResponseEntity<Family> addFamily(@RequestBody Family family){
+        Family newFamily = familyService.addFamily(family);
+        return new ResponseEntity<Family>(newFamily, HttpStatus.CREATED);
     }
 }

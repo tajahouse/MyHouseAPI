@@ -2,14 +2,16 @@ package dev.myhouseapp.MyHouse;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import lombok.*;
 
 import java.util.Date;
 import java.util.List;
 
-@Document(collection = "families")
+@Document(collection = "family")
 @Data // for getters and setters
 @AllArgsConstructor // for constructors
 @NoArgsConstructor
@@ -25,7 +27,9 @@ public class Family {
     private String family_name;
     private String google_calendar;
     private Date creation_date;
+    @DBRef
     private List<Post> posts;
+    @DocumentReference // Will need to use MongoTemplate to explicitly load the related document
     private List<Profile> profiles;
 //todo: Clean up
     // public ObjectId getHouse_id(){
