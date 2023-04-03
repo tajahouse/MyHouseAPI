@@ -9,5 +9,4 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface FamilyRepository extends MongoRepository<Family, ObjectId> {
     Optional<Family> findFamilyByImdbId(String imdbId); 
-    Family addFamilyByImdbId(Family family); 
 }

@@ -31,6 +31,7 @@ public class Family {
     private List<Post> posts;
     @DocumentReference // Will need to use MongoTemplate to explicitly load the related document
     private List<Profile> profiles;
+    
 //todo: Clean up
     // public ObjectId getHouse_id(){
     //     return house_id;

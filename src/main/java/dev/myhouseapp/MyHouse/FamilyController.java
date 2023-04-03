@@ -3,7 +3,6 @@ package dev.myhouseapp.MyHouse;
 import java.util.List;
 import java.util.Optional;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,11 +24,5 @@ public class FamilyController {
     @GetMapping("/{imdbId}")
     public ResponseEntity<Optional<Family>> getSingleFamily(@PathVariable String imdbId){
         return new ResponseEntity<Optional<Family>>(familyService.singleFamily(imdbId), HttpStatus.OK);
-    }
-
-    @PostMapping
-    public ResponseEntity<Family> addFamily(@RequestBody Family family){
-        Family newFamily = familyService.addFamily(family);
-        return new ResponseEntity<Family>(newFamily, HttpStatus.CREATED);
     }
 }

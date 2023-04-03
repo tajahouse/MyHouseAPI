@@ -18,7 +18,4 @@ public class FamilyService {
     public Optional<Family> singleFamily(String imdbId){
         return familyRepository.findFamilyByImdbId(imdbId);
     }
-    public Family addFamily(Family family){
-        return familyRepository.addFamilyByImdbId(family);
-    }
 }
