@@ -1,12 +1,26 @@
-{
-    "_id": {"$oid":"616e53a0fa572c512b9f8581"},
-    "chore_name": "Clean the bathroom",
-    "assigned_to":{"$oid":"616e50cbfa572c512b9f857e" },
-    "date_created": {"$date": "2023-01-01T00:00:00Z"},
-    "date_due": {"$date": "2023-04-01T00:00:00Z"},
-    "date_completed": null,
-    "status": false,
-    "points": 10,
-    "category": "Cleaning",
-    "priority": "HIGH"
-}
+[
+    {
+        "_id": {"$oid":"616e53a0fa572c512b9f8581"},
+        "chore_name": "Clean the bathroom",
+        "assigned_to":{"$oid":"616e50cbfa572c512b9f857e" },
+        "date_created": {"$date": "2023-01-01T00:00:00Z"},
+        "date_due": {"$date": "2023-04-01T00:00:00Z"},
+        "date_completed": null,
+        "status": false,
+        "points": 10,
+        "category": "Cleaning",
+        "priority": "HIGH"
+    },
+    {
+        "_id": {"$oid":"616e53a0fa572c512b9f8582"},
+        "chore_name": "Clean the living room",
+        "assigned_to":{"$oid":"616e50cbfa572c512b9f857f" },
+        "date_created": {"$date": "2023-01-01T00:00:00Z"},
+        "date_due": {"$date": "2023-04-01T00:00:00Z"},
+        "date_completed": null,
+        "status": false,
+        "points": 5,
+        "category": "Cleaning",
+        "priority": "HIGH"
+    }
+]
